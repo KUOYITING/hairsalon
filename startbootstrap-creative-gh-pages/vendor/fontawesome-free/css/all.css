@@ -1931,6 +1931,9 @@ readers do not read off random characters that represent icons */
 .fa-grunt:before {
   content: "\f3ad"; }
 
+.fa-group:before {
+content: "\f0c0"; }
+
 .fa-guitar:before {
   content: "\f7a6"; }
 
