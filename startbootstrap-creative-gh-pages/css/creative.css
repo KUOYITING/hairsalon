@@ -10594,6 +10594,14 @@ hr.light {
   border-radius: 10rem;
 }
 
+.btn-x2 {
+  padding: 1rem 2rem;
+  font-size: 0.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10rem;
+}
+
 .page-section {
   padding: 8rem 0;
 }
