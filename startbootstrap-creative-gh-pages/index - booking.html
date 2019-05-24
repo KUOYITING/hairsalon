@@ -22,14 +22,6 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
-  <script>
-function myFunction() {
-  var x,y;
-  // Get the value of the input field with id="name"
-  x = document.getElementById("name").value;
-  y = document.getElementById("phone").value;
-}
-</script>
 </head>
 
 <body id="page-top">
@@ -95,12 +87,13 @@ function myFunction() {
   <section class="page-section" id="bookservice">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
+        <div class="col-lg-5 text-center">
           <h2 class="mt-0">Booking Services</h2>
           <hr class="divider my-4">
+    <form>
           <p class="text-muted mb-8">Please input your basic information.</p>
-          <p>Name: <input id="name"></p>
-          <p>Phone: <input id="phone"></p>
+          <p>Name: <input id="name" required></p>
+          <p>Phone: <input id="phone" required></p>
           <br>
           <p class="text-muted mb-8">Please choose the services you want to do: </p>
               <div class="booking_text text-center">
@@ -125,46 +118,56 @@ function myFunction() {
           </select>
           </div>
           <br>
+          <button type=reset id="reset" class="btn btn-secondary btn-x2 js-scroll-trigger">Reset</button>
           <button type="button" class="btn btn-primary btn-x2 js-scroll-trigger" onclick="myFunction()">Next</button>
+    </form>
+    
         </div>
       </div>
     </div>
   </section>
 
   <!-- Booking item Section -->
+
   <section class="page-section" id="bookitem">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
+        <div class="col-lg-4 text-center">
           <h2 class="mt-0">Booking Items</h2>
           <hr class="divider my-4">
-          <p>Name: <input id="name"></p>
-          <p>Phone: <input id="phone"></p>
+        <form>
+          <p class="text-muted mb-8">Please input your basic information.</p>
+          <p>Name: <input id="name" required></p>
+          <p>Phone: <input id="phone" required></p>
           <br>
-          <p class="text-muted mb-8">Please choose the itmes you want to buy: </p>
-              <div class="booking_text text-center">
-                  <label><input class="Box Removebox" name="book_data[]" value="1" type="checkbox">Trim &nbsp; </label>
-                  <label><input class="Box Removebox" name="book_data[]" value="2" type="checkbox">Shampoo &nbsp; </label> 
-                  <label><input class="Box Removebox" name="book_data[]" value="3" type="checkbox">Dye &nbsp; </label>
-                  <label><input class="Box Removebox" name="book_data[]" value="4" type="checkbox">Permanent &nbsp; </label>
-                  <label><input class="Box Removebox" name="book_data[]" value="5" type="checkbox">Treatment </label>
-              </div>  
-              <br>
-          <p class="text-muted mb-8">Please choose the designer: </p>
-          <div class="col-lg-12" style="text-align: center;">
-          <select name="book_time" class="form-control Removeselect" required>
-              <option value="">Choose Designer</option>
-              <option value="none">non-appoint</option>
-              <option value="Amy">Amy</option>
-              <option value="Ben">Ben</option>
-              <option value="Carmen">Carmen</option>
-              <option value="Daniel">Daniel</option>
-              <option value="Evan">Evan</option>
-              <option value="Fiona">Fiona</option>
-          </select>
+          <div>
+          <div class="col-lg-12" style="text-align: left;">
+          <p class="text-muted mb-8">1. Item:<select name="book_time" class="form-control Removeselect" required>
+              <option value="">Choose Item</option>
+              <option value="TM">TM (NTD450.00)</option>
+              <option value="Crazy Joe">Crazy Joe (NTD660.00)</option>
+              <option value="KENNI">KENNI (NTD550.00)</option>
+              <option value="FURTERER">FURTERER (NTD420.00)</option>
+              <option value="DESSE'S">DESSE'S (NTD250.00)</option>
+              <option value="Le ment">Le ment (NTD320.00)</option>
+          </select></p>
           </div>
           <br>
-          <button type="button" class="btn btn-primary btn-x2 js-scroll-trigger" onclick="myFunction()">Next</button>
+          <div class="col-lg-12" style="text-align: left;">
+          <p class="text-muted mb-8">&nbsp;&nbsp;&nbsp;&nbsp;Quantity:<select name="book_time" class="form-control Removeselect" required>
+              <option value="">Choose Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+          </select></p>
+          </div><br></div>
+          <button id="add" class="btn btn-secondary btn-x2 js-scroll-trigger" onclick="addField()">+</button>
+          <button type=reset id="reset" class="btn btn-secondary btn-x2 js-scroll-trigger">Reset</button>
+          <button id="complete" class="btn btn-primary btn-x2 js-scroll-trigger" onclick="myFunction()">Complete</button>
+    </form>
         </div>
       </div>
     </div>
