@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- colors for general appearance -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#C5CAE9</color>
+    <color name="colorAccent">#303F9F</color>
+
+    <!-- colors for task priority selection -->
+    <color name="lightcorol"> #F08080</color>
+    <color name="salmon">#FA8072</color>
+    <color name="lightsalmon">#FFA07A</color>
+    <color name="orangered">#FF4500</color>
+    <color name="tomato">#FF6347</color>
+    <color name="indianre">#CD5C5C</color>
+
+</resources>
