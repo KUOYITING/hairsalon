@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Study Japanese</string>
+    <string name="main_activity_name">All Category</string>
+    <string name="add_task_activity_name">Add a New Word</string>
+
+    <!-- Strings for MainActivity -->
+    <string name="category_1">Meal</string>
+    <string name="category_2">Shopping</string>
+    <string name="category_3">Study</string>
+    <string name="category_4">Job</string>
+    <string name="category_5">5</string>
+    <string name="test">Traffic</string>
+    <string name="priority_string">Category</string>
+
+    <!-- Strings for AddTaskActivity -->
+    <!-- This edit task has a unicode character for "..." = "&#8230;" -->
+    <string name="edit_task_description">Describe your task&#8230;</string>
+    <string name="category_string">Category</string>
+
+    <string name="meal_category">Meal</string>
+    <string name="shop_category">Shopping</string>
+    <string name="study_category">Study</string>
+    <string name="job_category">Job</string>
+    <string name="traffic_category">Traffic</string>
+
+    <string name="add_button">Add</string>
+    <string name="setting_button">Settings</string>
+    <string name="sort_button">Sorting</string>
+    <string name="edit_word_description" />
+
+</resources>

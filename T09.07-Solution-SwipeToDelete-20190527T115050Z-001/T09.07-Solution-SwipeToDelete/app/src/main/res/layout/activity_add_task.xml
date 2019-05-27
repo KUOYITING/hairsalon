@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This vertical linear layout contains all the views in the AddTaskActivity code.
+    This includes an EditText to add a task description, and buttons to select a priority
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!-- EditText for getting task description input -->
+    <EditText
+        android:id="@+id/editWordDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:hint="@string/edit_word_description"
+        android:paddingBottom ="@dimen/activity_horizontal_margin"/>
+
+    <!-- TextView and FrameLayout (which contains buttons) for Priority Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:textColor="@android:color/primary_text_light"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/category_string"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <!-- Linear layout that contains all three priority buttons (high, medium, low)
+        in a single line -->
+
+        <!-- RadioGroup for visible selection of a priority -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/buttonP1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/lightcorol"
+                android:onClick="onPrioritySelected"
+                android:text="@string/meal_category"
+                android:textColor="@android:color/primary_text_light" />
+
+            <Button
+                android:id="@+id/buttonP2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/salmon"
+                android:onClick="onPrioritySelected"
+                android:text="@string/shop_category"
+                android:textColor="@android:color/primary_text_light" />
+
+            <Button
+                android:id="@+id/buttonP3"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/lightsalmon"
+                android:onClick="onPrioritySelected"
+                android:text="@string/study_category"
+                android:textColor="@android:color/primary_text_light" />
+
+            <Button
+                android:id="@+id/buttonP4"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/orangered"
+                android:onClick="onPrioritySelected"
+                android:text="@string/job_category"
+                android:textColor="@android:color/primary_text_light" />
+
+            <Button
+                android:id="@+id/buttonP5"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/tomato"
+                android:onClick="onPrioritySelected"
+                android:text="@string/traffic_category"
+                android:textColor="@android:color/primary_text_light" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <RadioButton
+                android:id="@+id/radButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="onPrioritySelected"
+                android:theme="@style/WhiteRadioButton" />
+
+            <RadioButton
+                android:id="@+id/radButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="onPrioritySelected"
+                android:theme="@style/WhiteRadioButton" />
+
+            <RadioButton
+                android:id="@+id/radButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="onPrioritySelected"
+                android:theme="@style/WhiteRadioButton" />
+
+            <RadioButton
+                android:id="@+id/radButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="onPrioritySelected"
+                android:theme="@style/WhiteRadioButton" />
+
+            <RadioButton
+                android:id="@+id/radButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="onPrioritySelected"
+                android:theme="@style/WhiteRadioButton" />
+
+        </RadioGroup>
+
+    </FrameLayout>
+
+    <!-- Add button -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/add_button"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/primary_text_dark"
+        android:background="@color/indianre"
+        android:onClick="onClickAddTask"/>
+
+</LinearLayout>

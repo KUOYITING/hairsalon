@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_word"
+        android:title="@string/add_button"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/setting"
+        android:title="@string/setting_button"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sorting"
+        android:title="@string/sort_button"
+        app:showAsAction="never" />
+</menu>
